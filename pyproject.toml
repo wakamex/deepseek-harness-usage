@@ -1,0 +1,23 @@
+[project]
+name = "deepseek-harness-usage"
+version = "0.1.0"
+description = "DeepSeek Harness account balance monitor for official DeepSeek API accounts"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pyyaml>=6.0.3",
+]
+
+[tool.uv]
+package = true
+
+[project.urls]
+Homepage = "https://github.com/wakamex/deepseek-harness-usage"
+Source = "https://github.com/wakamex/deepseek-harness-usage"
+
+[project.scripts]
+deepseek-harness-usage = "deepseek_harness_usage:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
